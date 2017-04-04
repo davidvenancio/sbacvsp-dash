@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pesquisa Exposição a Radiação Ionizante</title>
+
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="<?= APP_URI_TEMPLATES ?>/css/style.css">
+
+        <link rel="stylesheet" href="<?= APP_URI_TEMPLATES ?>/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+        <style>
+            body {font-family: 'Montserrat', sans-serif; font-size: 14px;}
+            input[type="text"] {width: 85%; padding: 1%;}
+            select {padding: 1%;}
+            textarea {width: 85%; height: 85px;}
+
+            #conteudo {width: 80%; margin: 0 auto;}
+
+            .titulo-grande {background-color: #673ab7; color: #ffffff; font-size: 1.5em; padding: 1%; text-align: center; margin-bottom: 1%}
+
+            .div-linhas {padding-bottom: 2%;}
+            .label-campos {background-color: #efedf2; padding: 1%; margin-bottom: 1%;}
+        </style>
+
+    </head>
+    <body>
+        
+        <div id="conteudo">
+
+            <form name="form" method="post" action="<?= APP_URI ?>/save-quest1">
+
+                <div class="titulo-grande">Pesquisa Exposição a Radiação Ionizante</div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> NOME * </div>
+                    <div> <input type="text" name="1" value="" required> </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> CRM * </div>
+                    <div> <input type="text" name="2" value="" required> </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> DATA DE NASCIMENTO * </div>
+                    <div> 
+                        <select name="3">
+                            <?php for($data_nasc = 1; $data_nasc <= 31; $data_nasc++){ ?>
+                                <option value="<?= $data_nasc ?>"><?= $data_nasc ?></option>
+                            <?php } ?>
+                        </select>
+                        /
+                        <select name="4">
+                            <?php for($mes_nasc = 1; $mes_nasc <= 12; $mes_nasc++){ ?>
+                                <option value="<?= $mes_nasc ?>"><?= $mes_nasc ?></option>
+                            <?php } ?>
+                        </select>
+                        /
+                        <select name="5">
+                            <?php for($ano_nasc = 1900;$ano_nasc <= date('Y'); $ano_nasc++){ ?>
+                                <option value="<?= $ano_nasc ?>"><?= $ano_nasc ?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> Sexo </div>
+                    <div> 
+                        <input type="radio" name="6" value="M"> M   <br>
+                        <input type="radio" name="6" value="F"> F    <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> CIDADE QUE TRABALHA </div>
+                    <div> <input type="text" name="7" value=""> </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> REALIZA PROCEDIMENTO ENDOVASCULAR * </div>
+                    <div> 
+                        <input type="radio" name="8" value="Sim"> Sim    <br>
+                        <input type="radio" name="8" value="Não"> Não    <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> HÁ QUANTO TEMPO </div>
+                    <div> 
+                        <input type="radio" name="9" value="< 2 anos"> < 2 anos   <br>
+                        <input type="radio" name="9" value="< 5 anos"> < 5 anos   <br>
+                        <input type="radio" name="9" value="< 10 anos"> < 10 anos    <br>
+                        <input type="radio" name="9" value="< 20"> < 20   <br>
+                        <input type="radio" name="9" value="> 20"> > 20   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> QUANTOS POR MÊS </div>
+                    <div> 
+                        <input type="radio" name="10" value="ATÉ 5"> ATÉ 5    <br>
+                        <input type="radio" name="10" value="5 - 10"> 5 - 10    <br>
+                        <input type="radio" name="10" value="10-20"> 10-20    <br>
+                        <input type="radio" name="10" value="> 20"> > 20   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> COMENTÁRIO / OBSERVAÇÃO 1 </div>
+                    <div> 
+                        <textarea name="11"></textarea> 
+                    </div>
+                </div>
+
+
+                <input type="submit" value="Proximo">
+
+
+            </form>
+
+        </div>
+
+    </body>
+</html>

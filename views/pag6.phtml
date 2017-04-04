@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pesquisa Exposição a Radiação Ionizante</title>
+
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="<?= APP_URI_TEMPLATES ?>/css/style.css">
+
+        <link rel="stylesheet" href="<?= APP_URI_TEMPLATES ?>/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+        <style>
+            body {font-family: 'Montserrat', sans-serif; font-size: 14px;}
+            input[type="text"] {width: 85%; padding: 1%;}
+            select {padding: 1%;}
+            textarea {width: 85%; height: 85px;}
+
+            #conteudo {width: 80%; margin: 0 auto;}
+
+            .titulo-grande {background-color: #673ab7; color: #ffffff; font-size: 1.5em; padding: 1%; text-align: center; margin-bottom: 1%}
+
+            .div-linhas {padding-bottom: 2%;}
+            .label-campos {background-color: #efedf2; padding: 1%; margin-bottom: 1%;}
+        </style>
+
+    </head>
+    <body>
+        
+        <div id="conteudo">
+
+            <form name="form" method="post" action="<?= APP_URI ?>/save-quest6">
+
+                <div class="titulo-grande">Pesquisa Exposição a Radiação Ionizante</div>
+
+                <div class="titulo-grande">MEDIDAS DE REDUÇÃO DE RADIAÇÃO</div>
+                <div style="background-color: #673ab7; color: #ffffff; font-size: 1.3em; padding: 1%; text-align: center; margin-bottom: 1%">CONHECIMENTO</div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> TEM CONHECIMENTO BÁSICO DE FÍSICA DAS RADIAÇÕES PARA O USO APROPRIADO DO EQUIPAMENTO / PROCEDIMENTO? </div>
+                    <div> 
+                        <input type="radio" name="92" value="Sim"> Sim  <br>
+                        <input type="radio" name="92" value="Não"> Não   <br> 
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> TEM CONHECIMENTO BÁSICO DE FÍSICA DAS RADIAÇÕES PARA O USO APROPRIADO DO EQUIPAMENTO PARA POSICIONAMENTO NA SALA EM USO DE PERFIL / OBLIQUA </div>
+                    <div> 
+                        <input type="radio" name="93" value="Sim"> Sim   <br>
+                        <input type="radio" name="93" value="Não"> Não   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> UTILIZA DE COLIMAÇÃO E FILTROS PRÓPRIA DO FEIXE PRIMÁRIO? </div>
+                    <div> 
+                        <input type="radio" name="94" value="Sim"> Sim   <br>
+                        <input type="radio" name="94" value="Não"> Não    <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> AFASTA DO PACIENTE NA HORA DE SUBTRAÇÃO / CINE ANGIOGRAFIA </div>
+                    <div> 
+                        <input type="radio" name="95" value="Sim"> Sim   <br>
+                        <input type="radio" name="95" value="Não"> Não   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> MANTÊM O CORPO E MÃOS DISTANTE DO FEIXE PRIMÁRIO DURANTE O PROCEDIMENTO? </div>
+                    <div> 
+                        <input type="radio" name="96" value="Sim"> Sim   <br>
+                        <input type="radio" name="96" value="Não"> Não   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> MANTÊM A FONTE DISTANTE DO PACIENTE (> 50 CM) </div>
+                    <div> 
+                        <input type="radio" name="97" value="Sim"> Sim   <br>
+                        <input type="radio" name="97" value="Não"> Não   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> PARTICIPARIA DE CURSO SOBRE FÍSICA E SEGURANÇA ? </div>
+                    <div> 
+                        <input type="radio" name="98" value="Sim"> Sim   <br>
+                        <input type="radio" name="98" value="Não"> Não   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> COMENTÁRIO / OBSERVAÇÃO 5 </div>
+                    <div> 
+                        <textarea name="99"></textarea>
+                    </div>
+                </div>
+
+
+                <input type="submit" value="Proximo">
+
+
+            </form>
+
+        </div>
+
+    </body>
+</html>

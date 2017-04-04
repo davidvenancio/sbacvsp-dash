@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pesquisa Exposição a Radiação Ionizante</title>
+
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="<?= APP_URI_TEMPLATES ?>/css/style.css">
+
+        <link rel="stylesheet" href="<?= APP_URI_TEMPLATES ?>/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+        <style>
+            body {font-family: 'Montserrat', sans-serif; font-size: 14px;}
+            input[type="text"] {width: 85%; padding: 1%;}
+            select {padding: 1%;}
+            textarea {width: 85%; height: 85px;}
+
+            #conteudo {width: 80%; margin: 0 auto;}
+
+            .titulo-grande {background-color: #673ab7; color: #ffffff; font-size: 1.5em; padding: 1%; text-align: center; margin-bottom: 1%}
+
+            .div-linhas {padding-bottom: 2%;}
+            .label-campos {background-color: #efedf2; padding: 1%; margin-bottom: 1%;}
+        </style>
+
+    </head>
+    <body>
+        
+        <div id="conteudo">
+
+            <form name="form" method="post" action="<?= APP_URI ?>/save-quest4">
+
+                <div class="titulo-grande">Pesquisa Exposição a Radiação Ionizante</div>
+
+                <div class="titulo-grande">MATERIAL DE PROTEÇÃO INDIVIDUAL</div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> USA CONSTANTEMENTE DURANTE OS PROCEDIMENTOS </div>
+                    <div> 
+                        <input type="checkbox" name="60" value="AVENTAL QUE COBRE A PARTE DA FRENTE E DAS COSTAS DO USUÁRIO"> AVENTAL QUE COBRE A PARTE DA FRENTE E DAS COSTAS DO USUÁRIO   <br>
+                        <input type="checkbox" name="61" value="AVENTAL COBRE SOMENTE A PARTE DA FRENTE"> AVENTAL COBRE SOMENTE A PARTE DA FRENTE   <br>
+                        <input type="checkbox" name="62" value="GORRO DE PROTEÇÃO"> GORRO DE PROTEÇÃO   <br>
+                        <input type="checkbox" name="63" value="PROTETOR DE TIREÓIDE"> PROTETOR DE TIREÓIDE    <br>
+                        <input type="checkbox" name="64" value="ÓCULOS PLUMBADO OU VISEIRA PROTETORA"> ÓCULOS PLUMBADO OU VISEIRA PROTETORA   <br>
+                        <input type="checkbox" name="65" value="ÓCULOS TENHO DISPONÍVEL MAS USO DE MANEIRA IRREGULAR"> ÓCULOS TENHO DISPONÍVEL MAS USO DE MANEIRA IRREGULAR  <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> QUANTO AO AVENTAL </div>
+                    <div> 
+                        <input type="checkbox" name="66" value="PRÓPRIO"> PRÓPRIO   <br>
+                        <input type="checkbox" name="67" value="HOSPITAL"> HOSPITAL   <br>
+                        <input type="checkbox" name="68" value="CHUMBO"> CHUMBO   <br>
+                        <input type="checkbox" name="69" value="TUNGSTÊNIO"> TUNGSTÊNIO   <br>
+                        <input type="checkbox" name="70" value="RENOVADO ANUALMENTE"> RENOVADO ANUALMENTE   <br>
+                        <input type="checkbox" name="71" value="FAÇO MANUTENÇÃO ADEQUADA COM AVALIAÇÃO SEMESTRAL"> FAÇO MANUTENÇÃO ADEQUADA COM AVALIAÇÃO SEMESTRAL   <br>
+                        <input type="checkbox" name="72" value="USO COLETIVO SEM MANUTENÇÃO OU RENOVAÇÃO"> USO COLETIVO SEM MANUTENÇÃO OU RENOVAÇÃO    <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> PROTEÇÃO COLETIVA - ESCUDO </div>
+                    <div> 
+                        <input type="radio" name="73" value="USO ESCUDO DE ANTEPARO SOBRE A MESA CONSTANTEMENTE"> USO ESCUDO DE ANTEPARO SOBRE A MESA CONSTANTEMENTE   <br>
+                        <input type="radio" name="73" value="USO ESCUDO DE ANTEPARO SOBRE A MESA RARAMENTE"> USO ESCUDO DE ANTEPARO SOBRE A MESA RARAMENTE   <br>
+                        <input type="radio" name="73" value="USO ESCUDO DE ANTEPARO SOBRE A MESA MAS NÃO É DISPONÍVEL EM TODOS OS SERVIÇOS"> USO ESCUDO DE ANTEPARO SOBRE A MESA MAS NÃO É DISPONÍVEL EM TODOS OS SERVIÇOS   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> PROTEÇÃO COLETIVA - SAIOTE </div>
+                    <div> 
+                        <input type="radio" name="74" value="USO SAIOTE DE ANTEPARO SOB A MESA CONSTANTEMENTE"> USO SAIOTE DE ANTEPARO SOB A MESA CONSTANTEMENTE   <br>
+                        <input type="radio" name="74" value="USO SAIOTE DE ANTEPARO SOB A MESA RARAMENTE"> USO SAIOTE DE ANTEPARO SOB A MESA RARAMENTE   <br>
+                        <input type="radio" name="74" value="USARIA SAIOTE DE ANTEPARO SOB A MESA MAS NÃO É DISPONÍVEL EM TODOS OS SERVIÇOS"> USARIA SAIOTE DE ANTEPARO SOB A MESA MAS NÃO É DISPONÍVEL EM TODOS OS SERVIÇOS   <br>
+                        <input type="radio" name="74" value="NÃO TENHO DISPONÍVEL"> NÃO TENHO DISPONÍVEL  <br> 
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> COMENTÁRIO / OBSERVAÇÃO 4 </div>
+                    <div> 
+                        <textarea name="75"></textarea>
+                    </div>
+                </div>
+
+
+                <input type="submit" value="Proximo">
+
+
+            </form>
+
+        </div>
+
+    </body>
+</html>

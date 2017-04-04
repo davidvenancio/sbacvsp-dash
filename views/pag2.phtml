@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pesquisa Exposição a Radiação Ionizante</title>
+
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="<?= APP_URI_TEMPLATES ?>/css/style.css">
+
+        <link rel="stylesheet" href="<?= APP_URI_TEMPLATES ?>/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+        <style>
+            body {font-family: 'Montserrat', sans-serif; font-size: 14px;}
+            input[type="text"] {width: 85%; padding: 1%;}
+            select {padding: 1%;}
+            textarea {width: 85%; height: 85px;}
+
+            #conteudo {width: 80%; margin: 0 auto;}
+
+            .titulo-grande {background-color: #673ab7; color: #ffffff; font-size: 1.5em; padding: 1%; text-align: center; margin-bottom: 1%}
+
+            .div-linhas {padding-bottom: 2%;}
+            .label-campos {background-color: #efedf2; padding: 1%; margin-bottom: 1%;}
+        </style>
+
+    </head>
+    <body>
+        
+        <div id="conteudo">
+
+            <form name="form" method="post" action="<?= APP_URI ?>/save-quest2">
+
+                <div class="titulo-grande">Pesquisa Exposição a Radiação Ionizante</div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> ANGIOPLASTIA E STENT PERIFÉRICO </div>
+                    <div> 
+                        <input type="checkbox" name="12" value="Sim"> Sim 
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> ANGIOPLASTIA E STENT CAROTÍDEO </div>
+                    <div> 
+                        <input type="checkbox" name="13" value="Sim"> Sim 
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> EMBOLIZAÇÃO DE MAV </div>
+                    <div> 
+                        <input type="checkbox" name="14" value="Sim"> Sim 
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> ANEURISMA TORÁCICO </div>
+                    <div> 
+                        <input type="checkbox" name="15" value="Sim"> Sim 
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> DISSECÇÃO DE AORTA </div>
+                    <div> 
+                        <input type="checkbox" name="16" value="Sim"> Sim 
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                <div class="label-campos"> ANEURISMA TORACO-ABOMINAL </div>
+                <div> 
+                    <input type="checkbox" name="17" value="NÃO"> NÃO   <br>
+                    <input type="checkbox" name="18" value="SIM RAMIFICADA"> SIM RAMIFICADA   <br>
+                    <input type="checkbox" name="19" value="SIM FENESTRADA"> SIM FENESTRADA   <br>
+                    <input type="checkbox" name="20" value="SIM CHAMINÉ/SANDWICHE"> SIM CHAMINÉ/SANDWICHE   <br>
+                    <input type="checkbox" name="21" value="COM PROCTOR"> COM PROCTOR   <br>
+                    <input type="checkbox" name="22" value="SEM PROCTOR"> SEM PROCTOR   <br>
+                </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> Comentario / Observação 2 </div>
+                    <div> 
+                        <textarea name="23"></textarea> 
+                    </div>
+                </div>
+
+
+                <input type="submit" value="Proximo">
+
+
+            </form>
+
+        </div>
+
+    </body>
+</html>

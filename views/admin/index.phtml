@@ -1,0 +1,39 @@
+<?php include(APP_URI_TEMPLATES_ADMIN.'/_header.phtml'); ?>
+
+        <div class="container">
+
+            <h1>Login</h1>
+
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <form name="form-login" id="form-login" method="post" action="<?= APP_URI_ADMIN ?>/login">
+                        <div class="form-group">
+                            <input type="text" name="usuario_login" id="usuario_login" class="form-control" value="" placeholder="Digite seu Login">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="usuario_senha" id="usuario_senha" class="form-control" value="" placeholder="Digite seu Senha">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="entrar" id="entrar" class="form-control" value="Entrar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="col-md-6">
+                <?php 
+                if(@$msg){
+                    ?>
+                    <div class="<?= $alerta ?>">
+                        <?php print_r($msg);  ?>
+                    </div>
+                    <?php
+                }
+                ?>
+                </div>
+            </div>
+
+        </div>
+
+<?php include(APP_URI_TEMPLATES_ADMIN.'/_footer.phtml'); ?>

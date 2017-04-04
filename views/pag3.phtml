@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pesquisa Exposição a Radiação Ionizante</title>
+
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="<?= APP_URI_TEMPLATES ?>/css/style.css">
+
+        <link rel="stylesheet" href="<?= APP_URI_TEMPLATES ?>/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+        <style>
+            body {font-family: 'Montserrat', sans-serif; font-size: 14px;}
+            input[type="text"] {width: 85%; padding: 1%;}
+            select {padding: 1%;}
+            textarea {width: 85%; height: 85px;}
+
+            #conteudo {width: 80%; margin: 0 auto;}
+
+            .titulo-grande {background-color: #673ab7; color: #ffffff; font-size: 1.5em; padding: 1%; text-align: center; margin-bottom: 1%}
+
+            .div-linhas {padding-bottom: 2%;}
+            .label-campos {background-color: #efedf2; padding: 1%; margin-bottom: 1%;}
+        </style>
+
+    </head>
+    <body>
+        
+        <div id="conteudo">
+
+            <form name="form" method="post" action="<?= APP_URI ?>/save-quest3">
+
+                <div class="titulo-grande">Pesquisa Exposição a Radiação Ionizante</div>
+
+                <div class="titulo-grande">SERVIÇOS QUE TRABALHA</div>
+                <div style="background-color: #673ab7; color: #ffffff; font-size: 1.3em; padding: 1%; text-align: center; margin-bottom: 1%">RECURSOS E PROTEÇÃO</div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> NÚMERO DE HOSPITAIS QUE FAZ PROCEDIMENTOS ENDOVASCULARES </div>
+                    <div> 
+                        <select name="24">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value=">5">>5</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="titulo-grande">RELATIVO AOS 3 SERVIÇOS QUE MAIS FREQUENTA</div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> HOSPITAL 1 </div>
+                    <div> 
+                        <input type="checkbox" name="25" value="ARCO CIRURGICO"> ARCO CIRURGICO   <br>
+                        <input type="checkbox" name="26" value="HEMODINAMICA FIXA"> HEMODINAMICA FIXA   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> HOSP 1 TEMPO DE USO </div>
+                    <div> 
+                        <input type="radio" name="27" value="0 a 2 anos"> 0 a 2 anos   <br>
+                        <input type="radio" name="27" value="2 a 5 anos"> 2 a 5 anos   <br>
+                        <input type="radio" name="27" value="5 a 10 anos"> 5 a 10 anos   <br>
+                        <input type="radio" name="27" value="> 10 anos"> > 10 anos   <br>
+                        <input type="radio" name="27" value="Não utilizamos"> Não utilizamos   <br>
+                        <input type="radio" name="27" value="Não sei"> Não sei   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> HOSPITAL 1 </div>
+                    <div> 
+                        <input type="radio" name="28" value="MANUTENÇÃO DO APARELHO ANUAL"> MANUTENÇÃO DO APARELHO ANUAL   <br>
+                        <input type="radio" name="28" value="SEMESTRAL"> SEMESTRAL   <br>
+                        <input type="radio" name="28" value="NÃO FAZ"> NÃO FAZ   <br>
+                        <input type="radio" name="28" value="DESCONHECIDO"> DESCONHECIDO   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> HOSPITAL 1 SISTEMA DE PROTEÇÃO DISPONÍVEL </div>
+                    <div> 
+                        <input type="checkbox" name="29" value="AVENTAL DE CHUMBO COM MAUTENÇÃO FREQUENTE"> AVENTAL DE CHUMBO COM MAUTENÇÃO FREQUENTE   <br>
+                        <input type="checkbox" name="30" value="AVENTAL DE CHUMBO SEM MAUTENÇÃO FREQUENTE"> AVENTAL DE CHUMBO SEM MAUTENÇÃO FREQUENTE  <br>
+                        <input type="checkbox" name="31" value="ÓCULOS DE PROTEÇÃO CONTRA RADIAÇÃO"> ÓCULOS DE PROTEÇÃO CONTRA RADIAÇÃO   <br>
+                        <input type="checkbox" name="32" value="GORRO DE PROTEÇÃO CONTRA RADIAÇÃO"> GORRO DE PROTEÇÃO CONTRA RADIAÇÃO  <br>
+                        <input type="checkbox" name="33" value="ESCUDO DE PROTEÇÃO SOBRE A MESA DE TRABALHO"> ESCUDO DE PROTEÇÃO SOBRE A MESA DE TRABALHO  <br>
+                        <input type="checkbox" name="34" value="SAIOTE DE PROTEÇÃO SOB A MESA DE TRABALHO"> SAIOTE DE PROTEÇÃO SOB A MESA DE TRABALHO  <br>
+                        <input type="checkbox" name="35" value="DOSÍMETRO PARA RADIAÇÃO"> DOSÍMETRO PARA RADIAÇÃO   <br>
+                    </div>
+                </div>
+
+
+                <div class="div-linhas">
+                    <div class="label-campos"> HOSPITAL 2 </div>
+                    <div> 
+                        <input type="checkbox" name="36" value="ARCO CIRURGICO"> ARCO CIRURGICO   <br>
+                        <input type="checkbox" name="37" value="HEMODINAMICA FIXA"> HEMODINAMICA FIXA   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> HOSP 2 TEMPO DE USO </div>
+                    <div> 
+                        <input type="radio" name="38" value="0 a 2 anos"> 0 a 2 anos   <br>
+                        <input type="radio" name="38" value="2 a 5 anos"> 2 a 5 anos   <br>
+                        <input type="radio" name="38" value="5 a 10 anos"> 5 a 10 anos   <br>
+                        <input type="radio" name="38" value="> 10 anos"> > 10 anos   <br>
+                        <input type="radio" name="38" value="Não utilizamos"> Não utilizamos   <br>
+                        <input type="radio" name="38" value="Não sei"> Não sei   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> HOSPITAL 2 </div>
+                    <div> 
+                        <input type="radio" name="39" value="MANUTENÇÃO DO APARELHO ANUAL"> MANUTENÇÃO DO APARELHO ANUAL   <br>
+                        <input type="radio" name="39" value="SEMESTRAL"> SEMESTRAL   <br>
+                        <input type="radio" name="39" value="NÃO FAZ"> NÃO FAZ   <br>
+                        <input type="radio" name="39" value="DESCONHECIDO"> DESCONHECIDO   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> HOSPITAL 2 SISTEMA DE PROTEÇÃO DISPONÍVEL </div>
+                    <div> 
+                        <input type="checkbox" name="40" value="AVENTAL DE CHUMBO COM MAUTENÇÃO FREQUENTE"> AVENTAL DE CHUMBO COM MAUTENÇÃO FREQUENTE   <br>
+                        <input type="checkbox" name="41" value="AVENTAL DE CHUMBO SEM MAUTENÇÃO FREQUENTE"> AVENTAL DE CHUMBO SEM MAUTENÇÃO FREQUENTE  <br>
+                        <input type="checkbox" name="42" value="ÓCULOS DE PROTEÇÃO CONTRA RADIAÇÃO"> ÓCULOS DE PROTEÇÃO CONTRA RADIAÇÃO  <br>
+                        <input type="checkbox" name="43" value="GORRO DE PROTEÇÃO CONTRA RADIAÇÃO"> GORRO DE PROTEÇÃO CONTRA RADIAÇÃO  <br>
+                        <input type="checkbox" name="44" value="ESCUDO DE PROTEÇÃO SOBRE A MESA DE TRABALHO"> ESCUDO DE PROTEÇÃO SOBRE A MESA DE TRABALHO  <br>
+                        <input type="checkbox" name="45" value="SAIOTE DE PROTEÇÃO SOB A MESA DE TRABALHO"> SAIOTE DE PROTEÇÃO SOB A MESA DE TRABALHO  <br>
+                        <input type="checkbox" name="46" value="DOSÍMETRO PARA RADIAÇÃO"> DOSÍMETRO PARA RADIAÇÃO   <br>
+                    </div>
+                </div>
+
+
+                <div class="div-linhas">
+                    <div class="label-campos"> HOSPITAL 3 </div>
+                    <div> 
+                        <input type="checkbox" name="47" value="ARCO CIRURGICO"> ARCO CIRURGICO   <br>
+                        <input type="checkbox" name="48" value="HEMODINAMICA FIXA"> HEMODINAMICA FIXA   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> HOSP 3 TEMPO DE USO </div>
+                    <div> 
+                        <input type="radio" name="49" value="0 a 2 anos"> 0 a 2 anos   <br>
+                        <input type="radio" name="49" value="2 a 5 anos"> 2 a 5 anos   <br>
+                        <input type="radio" name="49" value="5 a 10 anos"> 5 a 10 anos   <br>
+                        <input type="radio" name="49" value="> 10 anos"> > 10 anos   <br>
+                        <input type="radio" name="49" value="Não utilizamos"> Não utilizamos   <br>
+                        <input type="radio" name="49" value="Não sei"> Não sei   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> HOSPITAL 3 </div>
+                    <div> 
+                        <input type="radio" name="50" value="MANUTENÇÃO DO APARELHO ANUAL"> MANUTENÇÃO DO APARELHO ANUAL   <br>
+                        <input type="radio" name="50" value="SEMESTRAL"> SEMESTRAL   <br>
+                        <input type="radio" name="50" value="NÃO FAZ"> NÃO FAZ   <br>
+                        <input type="radio" name="50" value="DESCONHECIDO"> DESCONHECIDO   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> HOSPITAL 3 SISTEMA DE PROTEÇÃO DISPONÍVEL </div>
+                    <div> 
+                        <input type="checkbox" name="51" value="AVENTAL DE CHUMBO COM MAUTENÇÃO FREQUENTE"> AVENTAL DE CHUMBO COM MAUTENÇÃO FREQUENTE   <br>
+                        <input type="checkbox" name="52" value="AVENTAL DE CHUMBO SEM MAUTENÇÃO FREQUENTE"> AVENTAL DE CHUMBO SEM MAUTENÇÃO FREQUENTE   <br>
+                        <input type="checkbox" name="53" value="ÓCULOS DE PROTEÇÃO CONTRA RADIAÇÃO"> ÓCULOS DE PROTEÇÃO CONTRA RADIAÇÃO   <br>
+                        <input type="checkbox" name="54" value="GORRO DE PROTEÇÃO CONTRA RADIAÇÃO"> GORRO DE PROTEÇÃO CONTRA RADIAÇÃO   <br>
+                        <input type="checkbox" name="55" value="ESCUDO DE PROTEÇÃO SOBRE A MESA DE TRABALHO"> ESCUDO DE PROTEÇÃO SOBRE A MESA DE TRABALHO   <br>
+                        <input type="checkbox" name="56" value="SAIOTE DE PROTEÇÃO SOB A MESA DE TRABALHO"> SAIOTE DE PROTEÇÃO SOB A MESA DE TRABALHO   <br>
+                        <input type="checkbox" name="57" value="DOSÍMETRO PARA RADIAÇÃO"> DOSÍMETRO PARA RADIAÇÃO   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> ATUA COMO PROCTOR EM OUTRAS CIDADES / SERVIÇOS </div>
+                    <div> 
+                        <input type="radio" name="58" value="NÃO"> NÃO   <br>
+                        <input type="radio" name="58" value="SIM SEMANALMENTE"> SIM SEMANALMENTE   <br>
+                        <input type="radio" name="58" value="SIM MENSALMENTE"> SIM MENSALMENTE   <br>
+                        <input type="radio" name="58" value="RARAMENTE"> RARAMENTE   <br>
+                    </div>
+                </div>
+
+
+                <div class="div-linhas">
+                    <div class="label-campos"> COMENTÁRIO / OBSERVAÇÃO 3 </div>
+                    <div> 
+                        <textarea name="59"></textarea>
+                    </div>
+                </div>
+
+
+                <input type="submit" value="Proximo">
+
+
+            </form>
+
+        </div>
+
+    </body>
+</html>

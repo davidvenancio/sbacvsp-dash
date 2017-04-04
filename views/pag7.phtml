@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pesquisa Exposição a Radiação Ionizante</title>
+
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="<?= APP_URI_TEMPLATES ?>/css/style.css">
+
+        <link rel="stylesheet" href="<?= APP_URI_TEMPLATES ?>/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+        <style>
+            body {font-family: 'Montserrat', sans-serif; font-size: 14px;}
+            input[type="text"] {width: 85%; padding: 1%;}
+            select {padding: 1%;}
+            textarea {width: 85%; height: 85px;}
+
+            #conteudo {width: 80%; margin: 0 auto;}
+
+            .titulo-grande {background-color: #673ab7; color: #ffffff; font-size: 1.5em; padding: 1%; text-align: center; margin-bottom: 1%}
+
+            .div-linhas {padding-bottom: 2%;}
+            .label-campos {background-color: #efedf2; padding: 1%; margin-bottom: 1%;}
+        </style>
+
+    </head>
+    <body>
+        
+        <div id="conteudo">
+
+            <form name="form" method="post" action="<?= APP_URI ?>/save-quest7">
+
+                <div class="titulo-grande">Pesquisa Exposição a Radiação Ionizante</div>
+
+                <div class="titulo-grande">DOENÇA RELACIONADA A RADIAÇÃO</div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> PREDISPOSIÇÃO GENÉTICA A DOENÇA NEOPLÁSICA ? </div>
+                    <div> 
+                        <input type="checkbox" name="100" value="PAIS TIVERAM / TEM NEOPLASIA"> PAIS TIVERAM / TEM NEOPLASIA   <br>
+                        <input type="checkbox" name="101" value="AVÓS TIVERAM / TEM NEOPLASIA"> AVÓS TIVERAM / TEM NEOPLASIA   <br>
+                         <input type="checkbox" name="102" value="IRMÃOS TIVERAM / TEM NEOPLASIA"> IRMÃOS TIVERAM / TEM NEOPLASIA  <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> CHECK UP </div>
+                    <div> 
+                        <input type="checkbox" name="103" value="AVALIAÇÃO CLÍNICA ANUAL"> AVALIAÇÃO CLÍNICA ANUAL   <br>
+                        <input type="checkbox" name="104" value="VALIAÇÃO OFTÁLMICA ANUAL"> VALIAÇÃO OFTÁLMICA ANUAL   <br>
+                        <input type="checkbox" name="105" value="HEMOGRAMA SERIADO (MENSAL / TRIMESTRAL OU SEMESTRAL)"> HEMOGRAMA SERIADO (MENSAL / TRIMESTRAL OU SEMESTRAL)   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> APRESENTOU ALGUMA DOENÇA RELACIONADA A RADIAÇÃO? </div>
+                    <div> 
+                        <input type="checkbox" name="106" value="NEOPLASIA"> NEOPLASIA  <br>  
+                        <input type="checkbox" name="107" value="OFTÁLMICA"> OFTÁLMICA   <br>
+                        <input type="checkbox" name="108" value="HEMATOLÓGICA"> HEMATOLÓGICA   <br>
+                        <input type="checkbox" name="109" value="DERMATOLÓGICA"> DERMATOLÓGICA   <br>
+                        <input type="checkbox" name="110" value="GEROU AFASTAMENTO TEMPORÁRIO"> GEROU AFASTAMENTO TEMPORÁRIO   <br>
+                        <input type="checkbox" name="111" value="GEROU AFASTAMENTO DEFINITIVO"> GEROU AFASTAMENTO DEFINITIVO   <br>
+                        <input type="checkbox" name="112" value="NÃO"> NÃO   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> QUAL </div>
+                    <div> 
+                        <input type="text" name="113" value="">
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> ALGUÉM DA EQUIPE / COLEGA DO SERVIÇO APRESENTOU ALGUMA DOENÇA RELACIONADA A RADIAÇÃO? </div>
+                    <div> 
+                        <input type="checkbox" name="114" value="NEOPLASIA"> NEOPLASIA  <br>
+                        <input type="checkbox" name="115" value="OFTÁLMICA"> OFTÁLMICA   <br>
+                        <input type="checkbox" name="116" value="HEMATOLÓGICA"> HEMATOLÓGICA   <br>
+                        <input type="checkbox" name="117" value="DERMATOLÓGICA"> DERMATOLÓGICA   <br>
+                        <input type="checkbox" name="118" value="GEROU AFASTAMENTO TEMPORÁRIO"> GEROU AFASTAMENTO TEMPORÁRIO   <br>
+                        <input type="checkbox" name="119" value="GEROU AFASTAMENTO DEFINITIVO"> GEROU AFASTAMENTO DEFINITIVO   <br>
+                        <input type="checkbox" name="120" value="ÓBITO POR TUMOR"> ÓBITO POR TUMOR     <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> COMENTÁRIO / OBSERVAÇÃO 6 </div>
+                    <div> 
+                        <textarea name="121"></textarea> 
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> COMENTÁRIO FINAL E SUGESTÕES </div>
+                    <div> 
+                        <textarea name="122"></textarea>
+                    </div>
+                </div>
+
+
+                <input type="submit" value="Finalizar">
+
+
+            </form>
+
+        </div>
+
+    </body>
+</html>

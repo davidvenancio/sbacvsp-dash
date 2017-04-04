@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pesquisa Exposição a Radiação Ionizante</title>
+
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="<?= APP_URI_TEMPLATES ?>/css/style.css">
+
+        <link rel="stylesheet" href="<?= APP_URI_TEMPLATES ?>/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+        <style>
+            body {font-family: 'Montserrat', sans-serif; font-size: 14px;}
+            input[type="text"] {width: 85%; padding: 1%;}
+            select {padding: 1%;}
+            textarea {width: 85%; height: 85px;}
+
+            #conteudo {width: 80%; margin: 0 auto;}
+
+            .titulo-grande {background-color: #673ab7; color: #ffffff; font-size: 1.5em; padding: 1%; text-align: center; margin-bottom: 1%}
+
+            .div-linhas {padding-bottom: 2%;}
+            .label-campos {background-color: #efedf2; padding: 1%; margin-bottom: 1%;}
+        </style>
+
+    </head>
+    <body>
+        
+        <div id="conteudo">
+
+            <form name="form" method="post" action="<?= APP_URI ?>/save-quest5">
+
+                <div class="titulo-grande">Pesquisa Exposição a Radiação Ionizante</div>
+
+                <div class="titulo-grande">DOSÍMETRO</div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> USO DO DOSÍMETRO </div>
+                    <div> 
+                        <input type="checkbox" name="76" value="CONSTANTEMENTE EM TODOS OS SERVIÇOS"> CONSTANTEMENTE EM TODOS OS SERVIÇOS   <br>
+                        <input type="checkbox" name="77" value="RARAMENTE POIS NÃO ESTÁ DISPONÍVEL"> RARAMENTE POIS NÃO ESTÁ DISPONÍVEL   <br>
+                        <input type="checkbox" name="78" value="RARAMENTE POR EXCEDER O LIMITE DE RADIAÇÃO E ISTO IMPEDIRIA DE TRABALHAR"> RARAMENTE POR EXCEDER O LIMITE DE RADIAÇÃO E ISTO IMPEDIRIA DE TRABALHAR   <br>
+                        <input type="checkbox" name="79" value="MÉDICO ASSISTENTES DA EQUIPE UTILIZAM"> MÉDICO ASSISTENTES DA EQUIPE UTILIZAM   <br>
+                        <input type="checkbox" name="80" value="INSTRUMENTADOR UTILIZA"> INSTRUMENTADOR UTILIZA  <br>
+                        <input type="checkbox" name="81" value="MÉDICO ASSISTENTES DA EQUIPE NÃO UTILIZAM"> MÉDICO ASSISTENTES DA EQUIPE NÃO UTILIZAM   <br>
+                        <input type="checkbox" name="82" value="INSTRUMENTADOR NÃO UTILIZA"> INSTRUMENTADOR NÃO UTILIZA   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> DOSAGEM DO DOSÍMETRO NO ÚLTIMO RELATÓRIO </div>
+                    <div> 
+                        <textarea name="83"></textarea>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> SOMATÓRIA DA DOSAGEM DO DOSÍMETRO DOS DIVERSOS SERVIÇOS </div>
+                    <div> 
+                        <textarea name="84"></textarea>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> LEITURA DO DOSÍMETRO </div>
+                    <div> 
+                        <input type="checkbox" name="85" value="NUNCA SOMOU OS RESULTADOS"> NUNCA SOMOU OS RESULTADOS   <br>
+                        <input type="checkbox" name="86" value="JÁ TEVE QUE APRESENTAR HEMOGRAMA POR EXEDER LIMITE DE RADIAÇÃO EM 1 HOSPITAL"> JÁ TEVE QUE APRESENTAR HEMOGRAMA POR EXEDER LIMITE DE RADIAÇÃO EM 1 HOSPITAL   <br>
+                        <input type="checkbox" name="87" value="JÁ FOI IMPEDIDO DE TRABALHAR POR EXEDER LIMITE DE RADIAÇÃO EM 1 HOSPITAL"> JÁ FOI IMPEDIDO DE TRABALHAR POR EXEDER LIMITE DE RADIAÇÃO EM 1 HOSPITAL   <br>
+                        <input type="checkbox" name="88" value="QUANDO OCORRE EM UM HOSPITAL OS OUTROS SÃO INFORMADOS"> QUANDO OCORRE EM UM HOSPITAL OS OUTROS SÃO INFORMADOS   <br>
+                        <input type="checkbox" name="89" value="OS OUTROS HOSPITAIS NÃO SÃO INFORMADOS"> OS OUTROS HOSPITAIS NÃO SÃO INFORMADOS   <br>
+                        <input type="checkbox" name="90" value="TENHO DOSÍMETRO DE LEITURA AUTOMÁTICA"> TENHO DOSÍMETRO DE LEITURA AUTOMÁTICA   <br>
+                    </div>
+                </div>
+
+                <div class="div-linhas">
+                    <div class="label-campos"> COMENTÁRIO / OBSERVAÇÃO 4 </div>
+                    <div> 
+                        <textarea name="91"></textarea>
+                    </div>
+                </div>
+
+                <input type="submit" value="Proximo">
+
+
+            </form>
+
+        </div>
+
+    </body>
+</html>
