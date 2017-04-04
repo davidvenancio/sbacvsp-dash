@@ -5,15 +5,15 @@
 
 
 if ($_SERVER['HTTP_HOST'] == 'localhost'){
-    define('APP_URI', 'http://localhost/sbacvsp-dash');
-    define('APP_URI_PUBLIC', 'http://localhost/sbacvsp-dash/public');
-    define('APP_URI_TEMPLATES', 'http://localhost/sbacvsp-dash/views');
+    define('APP_URI', 'http://forms.sbacvsp.com.br');
+    define('APP_URI_PUBLIC', 'http://forms.sbacvsp.com.br/public');
+    define('APP_URI_TEMPLATES', 'http://forms.sbacvsp.com.br/views');
     
-    define('APP_URI_TEMPLATES_ADMIN', 'http://localhost/sbacvsp-dash/views/admin');
-    define('APP_URI_ADMIN', 'http://localhost/sbacvsp-dash/admin');
+    define('APP_URI_TEMPLATES_ADMIN', 'http://forms.sbacvsp.com.br/views/admin');
+    define('APP_URI_ADMIN', 'http://forms.sbacvsp.com.br/admin');
 
-    define('APP_URI_TEMPLATES_PAINEL', 'http://localhost/sbacvsp-dash/views/painel');
-    define('APP_URI_PAINEL', 'http://localhost/sbacvsp-dash/painel');
+    define('APP_URI_TEMPLATES_PAINEL', 'http://forms.sbacvsp.com.br/views/painel');
+    define('APP_URI_PAINEL', 'http://forms.sbacvsp.com.br/painel');
 
 } else {
     define('APP_URI', 'xxx');
