@@ -15,10 +15,10 @@ return [
         ],
 
         "db" => [
-            "host" => "localhost",
-            "dbname" => "sbacvsp-dash",
-            "user" => "root",
-            "pass" => ""
+            "host" => "robb0163.publiccloud.com.br",
+            "dbname" => "sbacvsaopaulo_form",
+            "user" => "sbacv_formsp",
+            "pass" => "in5Zd6#4"
         ],
 
     ],

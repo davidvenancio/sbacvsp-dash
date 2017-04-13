@@ -4,7 +4,19 @@
 // e.g: $app->add(new \Slim\Csrf\Guard);
 
 
-if ($_SERVER['HTTP_HOST'] == 'localhost'){
+if ($_SERVER['DOCUMENT_ROOT'] == $_SERVER['DOCUMENT_ROOT']){
+    define('APP_URI', '');
+    define('APP_URI_PUBLIC', '/public');
+    define('APP_URI_TEMPLATES', '/views');
+    
+    define('APP_URI_TEMPLATES_ADMIN', './views/admin');
+    define('APP_URI_ADMIN', '/admin');
+
+    define('APP_URI_TEMPLATES_PAINEL', 'painel');
+    define('APP_URI_PAINEL', '/painel');
+
+} else {
+
     define('APP_URI', 'http://forms.sbacvsp.com.br');
     define('APP_URI_PUBLIC', 'http://forms.sbacvsp.com.br/public');
     define('APP_URI_TEMPLATES', 'http://forms.sbacvsp.com.br/views');
@@ -15,7 +27,4 @@ if ($_SERVER['HTTP_HOST'] == 'localhost'){
     define('APP_URI_TEMPLATES_PAINEL', 'http://forms.sbacvsp.com.br/views/painel');
     define('APP_URI_PAINEL', 'http://forms.sbacvsp.com.br/painel');
 
-} else {
-    define('APP_URI', 'xxx');
-    define('APP_URI_PUBLIC', 'xxx');
 }
